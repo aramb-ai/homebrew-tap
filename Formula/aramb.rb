@@ -32,6 +32,12 @@ class Aramb < Formula
     bin.install binary => "aramb"
   end
 
+  def post_install
+    config_dir = "#{Dir.home}/.aramb"
+    FileUtils.mkdir_p(config_dir)
+    File.write("#{config_dir}/.installedFrom", "brew")
+  end
+
   test do
     system "\#{bin}/aramb", "--version"
   end
