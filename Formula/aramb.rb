@@ -4,26 +4,26 @@
 class Aramb < Formula
   desc "aramb CLI - cloud deployment and management tool"
   homepage "https://github.com/aramb-ai/aramb-cli"
-  version "1.0.0-beta3"
+  version "1.0.0-beta4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta3/aramb-darwin-arm64"
-      sha256 "0ef317edf836369f7a097b88463cda435a5fc4964b440914131af9ba33613e0c"
+      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta4/aramb-darwin-arm64"
+      sha256 "4e12f1569f8f07e76d25582e888c0913d534e10560d891a861a63f33ed2ecb22"
     else
-      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta3/aramb-darwin-amd64"
-      sha256 "c4a3d1611cef26cae524e1c005941d59b70fdb3371d935588bd218267bd194d2"
+      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta4/aramb-darwin-amd64"
+      sha256 "fcae476b144fe8080c4de06a45a77b325047d37b62668fc3e7043fbaac490142"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta3/aramb-linux-arm64"
-      sha256 "4d4751e2aa223dd6578e77e9fb3ed86f10e3dc55613652ac52e5f45a8e8d795b"
+      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta4/aramb-linux-arm64"
+      sha256 "87cd5d3c8141ecbf7bbb4c5661ccfa526a95723f83eef39acef13350d8bf901b"
     else
-      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta3/aramb-linux-amd64"
-      sha256 "149f17c54d2de735df3800384d2429ecd8db2235c9d7c78726526ee746565333"
+      url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta4/aramb-linux-amd64"
+      sha256 "b0f042699a6014b882d2f412fb1b4eb8572b0de0629125fb04ffee89782430eb"
     end
   end
 
