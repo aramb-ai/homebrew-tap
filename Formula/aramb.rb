@@ -10,20 +10,20 @@ class Aramb < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta6/aramb-darwin-arm64"
-      sha256 "3802e13fa3d413ec66db277396a0878585737bd097d60b26c9f20146be07a78f"
+      sha256 "bc7efe5a1eda7beb31a79e160bb5f267943c1858ee730f77ba2a0d8ccb6ebd8d"
     else
       url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta6/aramb-darwin-amd64"
-      sha256 "f99f189cb3bcc2831bb12079240ab9e1ff9e1ef3fde5c7d92a10e62590b468e1"
+      sha256 "df303b1e9e1a6508963832b17690393fa906bb1b5aaf85abb305ee2b6f96f23b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta6/aramb-linux-arm64"
-      sha256 "4b46e9dd07257018cbb0a6795820b34b2234f82b7b47b20e582a6b6276fea778"
+      sha256 "4a334638866159bb8d40049b07d51747b792b5a4bf4f2e75c3e81ab2ec0162cb"
     else
       url "https://github.com/aramb-ai/release-beta/releases/download/v1.0.0-beta6/aramb-linux-amd64"
-      sha256 "823d5689fe4110f599edbc4f02a8ea48be2fcc65f2fbd2ed37d7675a46ade7f7"
+      sha256 "0b81ff0813a27b07f444cd07fe53eec76e5f3b7f9683ad78e2fb9be3c13199ed"
     end
   end
 
